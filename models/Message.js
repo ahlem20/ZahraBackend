@@ -9,6 +9,10 @@ const messageSchema = new mongoose.Schema({
     type: String, // ✅ Change this from ObjectId
     required: true,
   },
+  message: {
+    type: String,
+    required: true,
+  },
   text: {
     type: String,
     required: false,
