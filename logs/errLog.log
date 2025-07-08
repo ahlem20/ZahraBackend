@@ -1,0 +1,33 @@
+20250624	22:27:29	152093dd-2033-463a-9d4a-a28248de521c	Error: Not allowed by CORS	GET	/note	http://localhost:5173
+20250624	22:27:29	d571d0a0-544b-4547-b4c4-fa1a2dc6df9a	Error: Not allowed by CORS	GET	/note	http://localhost:5173
+20250624	22:27:49	ba63bfc4-12fe-4882-bed5-0f9e9b23ed8e	Error: Not allowed by CORS	GET	/note	http://localhost:5173
+20250624	22:27:49	9f4eb7f7-00cf-4166-afe8-6b62c83f3733	Error: Not allowed by CORS	GET	/note	http://localhost:5173
+20250624	22:27:49	6c5a8876-15bc-43cc-acb7-9a7c9814e32e	Error: Not allowed by CORS	GET	/note	http://localhost:5173
+20250624	22:27:53	2a7ce614-1218-4dee-8ecb-8360652f98d9	Error: Not allowed by CORS	OPTIONS	/note	http://localhost:5173
+20250624	22:27:55	fc300d5d-742c-4ad3-b9da-a89da63b7915	Error: Not allowed by CORS	OPTIONS	/note	http://localhost:5173
+20250624	22:27:55	a1e03048-e246-4b41-85bb-b501e8cc6f40	Error: Not allowed by CORS	OPTIONS	/note	http://localhost:5173
+20250624	22:27:56	80139c65-dd7d-4ad0-b6d6-a9e6b9c2ad56	Error: Not allowed by CORS	OPTIONS	/note	http://localhost:5173
+20250624	22:27:56	3539b378-6910-43b8-adca-16a9f5edd89e	Error: Not allowed by CORS	OPTIONS	/note	http://localhost:5173
+20250624	22:27:57	c7d4d991-42ea-400f-a022-338f4ba1f69a	Error: Not allowed by CORS	OPTIONS	/note	http://localhost:5173
+20250624	22:28:49	382c60a7-ae66-4a97-8de7-ee746b9a75ab	Error: Not allowed by CORS	OPTIONS	/note	http://localhost:5173
+20250624	22:28:50	36929d88-c853-498e-a869-7445f764a21f	Error: Not allowed by CORS	OPTIONS	/note	http://localhost:5173
+20250624	22:28:50	9b1df06e-9e9f-4a8b-a09e-df62ae13f1c1	Error: Not allowed by CORS	OPTIONS	/note	http://localhost:5173
+20250624	22:29:03	60776fb8-518a-46bb-b789-5760e9ba5c9c	Error: Not allowed by CORS	OPTIONS	/note	http://localhost:5173
+20250630	16:02:48	1045a6bf-1d12-45be-b4f2-e479f307d643	Error: ENOENT: no such file or directory, open 'C:\Users\oasis\OneDrive\Desktop\test\uploads\images\image-1751295768429-707929154.png'	POST	/message/send-image	http://localhost:5173
+20250630	16:03:01	e0b7c493-002a-464d-9b0e-4b761935b599	Error: ENOENT: no such file or directory, open 'C:\Users\oasis\OneDrive\Desktop\test\uploads\images\image-1751295781075-955373998.png'	POST	/message/send-image	http://localhost:5173
+20250707	22:04:59	56f395da-6488-4a00-94ea-8954a2333638	Error: Not allowed by CORS	OPTIONS	/users	https://zahra-6xbg.onrender.com
+20250707	22:04:59	2f8450b5-b27e-41e9-8dbd-87c43fc1a59f	Error: Not allowed by CORS	GET	/users	https://zahra-6xbg.onrender.com
+20250707	22:05:23	b77876bb-2ce9-4f30-a910-78c9705c9be2	Error: Not allowed by CORS	OPTIONS	/users	https://zahra-6xbg.onrender.com
+20250707	22:05:23	710f61c7-33f6-4009-bc7f-f605d0ab7d0f	Error: Not allowed by CORS	GET	/users	https://zahra-6xbg.onrender.com
+20250707	22:06:14	0bbec85e-168d-4b25-a426-539474d27304	Error: Not allowed by CORS	OPTIONS	/users	https://zahra-6xbg.onrender.com
+20250707	22:06:14	598b5839-4724-46cd-a8dd-d0b2ed4d7afe	Error: Not allowed by CORS	GET	/users	https://zahra-6xbg.onrender.com
+20250708	14:10:17	532fd184-ce49-4855-b561-c71696684ecd	RangeNotSatisfiableError: Range Not Satisfiable	GET	/uploads/audio-1751980199750-640134819.webm	undefined
+20250708	14:12:11	89e94bde-3e9c-47fb-89e8-8ebc5b06ac79	RangeNotSatisfiableError: Range Not Satisfiable	GET	/uploads/audio-1751980220175-443174625.webm	undefined
+20250708	14:39:51	fac2e154-7d49-443f-a34b-fe6e216baa58	RangeNotSatisfiableError: Range Not Satisfiable	GET	/uploads/audio-1751981983955-729402986	undefined
+20250708	14:40:10	dd413c5c-e1df-4490-ab58-db69a432e8d8	RangeNotSatisfiableError: Range Not Satisfiable	GET	/uploads/audio-1751981983955-729402986	undefined
+20250708	14:41:27	a7815a3b-fd8a-4b0d-95d5-5c19b9eec2d8	RangeNotSatisfiableError: Range Not Satisfiable	GET	/uploads/audio-1751981983955-729402986	undefined
+20250708	14:45:03	b42ef2ab-ed7b-4486-b0eb-81b1e0221184	RangeNotSatisfiableError: Range Not Satisfiable	GET	/uploads/audio-1751981983955-729402986	undefined
+20250708	14:47:15	3aeda74c-6cd0-4e45-9da7-6b1d2897e32c	RangeNotSatisfiableError: Range Not Satisfiable	GET	/uploads/audio-1751981983955-729402986	undefined
+20250708	14:52:49	d663c54a-41ba-49e9-95dd-011b3e1c83cc	RangeNotSatisfiableError: Range Not Satisfiable	GET	/uploads/audio-1751981983955-729402986	undefined
+20250708	14:55:55	459bd0ef-d480-4b3a-a574-6d3c6b725077	RangeNotSatisfiableError: Range Not Satisfiable	GET	/uploads/audio-1751981983955-729402986	undefined
+20250708	14:56:37	c5888d82-3e56-4c7f-b665-c4354e279b1d	RangeNotSatisfiableError: Range Not Satisfiable	GET	/uploads/audio-1751981983955-729402986	undefined

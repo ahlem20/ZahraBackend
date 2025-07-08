@@ -1,0 +1,12 @@
+const mongoose = require("mongoose");
+
+const walletSchema = new mongoose.Schema({
+  userId: { type: String, required: true, unique: true },
+  cardNumber: { type: String },
+  cardHolder: { type: String },
+  expiry: { type: String },
+  cvv: { type: String },
+  balance: { type: Number, default: 0 },
+});
+
+module.exports = mongoose.model("Wallet", walletSchema);
