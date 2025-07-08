@@ -1,9 +1,10 @@
 const Message = require("../models/Message");
-const Session = require("../models/Session"); // You’ll need to define this as well
+const Session = require("../models/Session");
 const { getReceiverSocketId, io } = require("../socket/socket");
 
 const sendMessage = async (req, res) => {
-  const { senderId, receiverId, message, timestamp, groupId } = req.body;
+  const { senderId, receiverId, message, timestamp, groupId, devMode } =
+    req.body;
 
   if (!senderId || (!receiverId && !groupId) || !message) {
     return res
@@ -28,7 +29,6 @@ const sendMessage = async (req, res) => {
 
     // ✅ Direct message (session required)
     const session = await Session.findOne({
-      type: "session",
       isAccepted: true,
       $or: [
         { requesterId: senderId, receiverId },
@@ -50,7 +50,7 @@ const sendMessage = async (req, res) => {
     const openTime = new Date(sessionDateTime.getTime() - 60 * 60 * 1000);
     const closeTime = new Date(sessionDateTime.getTime() + 2 * 60 * 60 * 1000);
 
-    if (now < openTime || now > closeTime) {
+    if (!devMode && (now < openTime || now > closeTime)) {
       return res.status(403).json({
         success: false,
         error:
@@ -142,7 +142,6 @@ const deleteMessage = async (req, res) => {
     res.status(500).json({ success: false, error: err.message });
   }
 };
-
 
 const deleteAllMessage = async (req, res) => {
   const { user1, user2 } = req.params;
@@ -246,7 +245,6 @@ const sendAudioMessage = async (req, res) => {
   }
 };
 
-
 const getMessagesByConversation = async (req, res) => {
   const { userId, receiverId } = req.params;
 
@@ -267,8 +265,6 @@ const getMessagesByConversation = async (req, res) => {
     res.status(500).json({ error: "Failed to fetch messages" });
   }
 };
-
-
 
 const getAudioMessages = async (req, res) => {
   const { senderId, receiverId } = req.params;
@@ -343,9 +339,6 @@ const getImageMessages = async (req, res) => {
   }
 };
 
-
-
-
 const getMessagesByUser = async (req, res) => {
   const { userId } = req.params;
 
@@ -393,7 +386,6 @@ const getMessagesByGroupId = async (req, res) => {
       .json({ success: false, error: "Failed to fetch group messages." });
   }
 };
-
 
 module.exports = {
   sendMessage,
